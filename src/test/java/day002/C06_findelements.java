@@ -17,6 +17,9 @@ public class C06_findelements {
         List<WebElement> tag = driver.findElements(By.tagName("input"));
         System.out.println("input tag'inin sayısı = "+tag.size());
 
-        System.out.println(driver.findElement(By.xpath("(//*[@class='a-color-base headline truncate-2line'])[1]")).getText());
+        System.out.println(driver.findElement
+                (By.xpath("(//*[@class='a-color-base headline truncate-2line'])[1]")).getText());
+        driver.close();
+
     }
 }

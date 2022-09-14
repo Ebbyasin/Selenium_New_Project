@@ -31,6 +31,7 @@ public class bireyselCalisma {
 
         System.out.println(driver.getPageSource());// o sitenin arkasindaki butun kaynak kodlarini getirir
                                                    // ayni zamanda sitenin sayfasinda boslukta sag tik/incele
+        driver.close();
 
 
     }
