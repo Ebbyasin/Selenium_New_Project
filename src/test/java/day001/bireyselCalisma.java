@@ -32,6 +32,12 @@ public class bireyselCalisma {
         System.out.println(driver.getPageSource());// o sitenin arkasindaki butun kaynak kodlarini getirir
                                                    // ayni zamanda sitenin sayfasinda boslukta sag tik/incele
         driver.close();
+        //driver.quit();acilan tum browserleri kapatir,birden fazla tabi,sekmeyi kapatmak icin kullanilir.
+        //search box:arama kutusu
+        //text box=metin kutusu
+        //headers=basliklar
+        //otomasyon icin uniwue(tek) web ogelerini(element) tanimlamak uzere html kodunu inceleyecegiz(inspect)
+        //web elementleri birlikte kullanici arayuzunde (UI) bir web sayfasi olustururlar.
 
 
     }

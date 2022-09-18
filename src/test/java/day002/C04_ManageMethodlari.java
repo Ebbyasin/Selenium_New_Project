@@ -22,9 +22,14 @@ public class C04_ManageMethodlari {
         implicitWait bize sayfanin yuklenmesi ve sayfadaki elementlere ulasim icin beklenecek
         MAXİMUM sureyi belirleme olanagi tanir
 
-        OZEL NOT(ARKADAS NOTU)
-        //implicity, çalısmıyorsa beklemez kapanır.
+        OZEL NOT(ARKADAS NOTU) ÖNEMLİİİ!!!!!!!!!!!!!!!!1
+        //implicity, çalısmıyorsa beklemez kapanır.diyelim ki 5 sn de acildi acmak istedigimiz site,implicitly
+        15 sn diye beklemez(hemen arkasindan driver.close varsa kapanir acildigi anda..
         //thread.sleep çalışsada çalısmasada verdiginiz saniye kadar bekler.
+         */
+        /*
+        driver.close() la ,driver quit arasindaki fark sudur.bir sayfada 4 farkli sekme varsa,close dendiginde
+        sadece en son acilan kapanir,hepsini kapatmak istiyorsak driver.quit() deriz
          */
 
 

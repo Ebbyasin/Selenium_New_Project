@@ -18,7 +18,7 @@ public class C01_IlkClass {
        // bunun icin java kutuphanesinde System.setProperty() methodunu kullaniriz.
         //ve methodun icine ilk olarak driver i yazariz.ikinci olarak onun fiziki yolunu kopyalariz.
 
-
+          //Ctrl + u ---> icinde bulundugumuz adresin kaynak kodlarini acar.
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
         /*
@@ -27,6 +27,8 @@ public class C01_IlkClass {
         otomasyon icin gerekli olan webdriver in yerini gostermek istedigimizde,sol tarafta(proje ekrani kisminda)
         chromedriver.exe uzerine sag tik yapip yukarda anlattigim hamleleri yapariz.en sonunda System.setProperty
         de parantez icindeki ikinci tirnak icine yazariz..
+
+        Class ismi buyuk harfle yazilir,bunu unutma
          */
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.amazon.com");  //www olmasada olur,ama https de s olmali,s security demek...
