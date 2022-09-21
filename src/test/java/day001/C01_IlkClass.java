@@ -36,9 +36,6 @@ public class C01_IlkClass {
         System.out.println("Actual Url "+driver.getCurrentUrl()); //gidilen sayfanin url sini getirir.
 
         System.out.println(driver.getPageSource());
-        /*
-        yorum icin iyi renk secmisiz
-         */
         driver.close();
 
 

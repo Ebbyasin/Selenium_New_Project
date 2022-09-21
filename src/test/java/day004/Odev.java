@@ -66,7 +66,7 @@ public class Odev {
         WebElement delete = driver.findElement(By.className("no-js"));
         String arananButon = "Delete";
 
-        if (!delete.getText().contains(arananButon)) {
+        if (!delete.getText().contains(arananButon)) { // getText demezsek string le webelementi karsilastiramiyiz..
 
             System.out.println("Delete Buton Gorunum Testi : PASSED");
         }
@@ -76,6 +76,15 @@ public class Odev {
         }
 
         Thread.sleep(2000);
+
+        List<WebElement> linkSayisi=driver.findElements(By.tagName("a"));
+        System.out.println("link sayisi : " + linkSayisi.size());
+
+        for (WebElement each:linkSayisi) {
+            System.out.println(each.getText());
+        }
+
+
 
         //Sayfayi kapatma :
         driver.close();

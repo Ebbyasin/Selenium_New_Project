@@ -1,12 +1,11 @@
-package day001;
+package TestOdev;
 
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class testYsn {
+public class Notlar {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
@@ -58,7 +57,7 @@ public class testYsn {
         LİNKLERİN TAGİ A yada h-HREF GİBİ...twotabsearchtextbox
 
        locatorler 8 tanedir.6 tanesi attiributlerle ilgilidir.geriye kalan 2 tanesi xpath,csslocator
-       bu tag attiribut ve value nun kombinasyonlariyla ilgilidir.6 tanesi cok bilinen attirubutlere gore
+       bu tag attiribut ve value nun kombinasyonlariyla ilgilidir.6 tanesi cok bilinen attirubutlere gore yapil
        mistir.id,name ,class,input,geriye kalan iki taneside linklerle ilgilidir.
        LOCATORLER
        id
@@ -83,6 +82,39 @@ public class testYsn {
         //tables(tablolar) vb..
         //otomasyon icin uniwue(tek) web ogelerini(element) tanimlamak uzere html kodunu inceleyecegiz(inspect)
         //web elementleri birlikte kullanici arayuzunde (UI) bir web sayfasi olustururlar.
+
+        //eger yanlis id locate edilirse ;NoSuchElementException hatasi olusur.
+
+        //class ve value unique ise,bu metodu da kullanabilirsiniz,ancak genelde class attribute ayni islevi yapan
+        //grup web elementi icin kullanilir
+        //class attirubetnun degeri bosluk iceriyorsa genelde by.classname ile yapilan locate ler saglikli
+        // calismaz
+
+        //linktest yalnizca html baglantilarini(link) tanimlamak icin kullanilabilir.
+        //link test attirbute nu kullandigimizda  once link old. kontrol ederiz <a kisaltmasi olmali
+        //string olarak alindigi icin bosluk varsa o da alinmali.
+
+        /*
+        Selenium suanakadar 4 tool cıkardı, Selenium RC, Selenium Webdriver,Selenium IDE,
+        Selenium Grid. Selenium WebDriver-->Selenium2,Selenium3,Selenium4..
+        Selenium neden cok tercih ediliyor? En büyük sebebi ucretsiz olması, ikincisi coğu platformlarda
+          calısabilmesi.farklı Dillerdeki browserlari destekleyebilmesi
+        mobile testi destekler
+        Agile ve Continuous Delivery ile entegre
+        Kullanici sayisi fazla
+        Genix plugin ve extention kütüphaneleri mevcut
+        Dezavantajları
+        Bir kod bilgisi gerektirir
+        Sadece web tabanlı uygulamalarda kullanılır. (mobile test için appium kullaniliyor)
+        Görüntü karsılastırma yok
+        Teknik destek yok
+        Raporlama özelliği yok
+        Grafik, captchas, barkod ve sekiller ile kullanılamaz.
+
+        Selenium grid=uzaktaki bilgisayarlarda tanımlanmıs farklı browserlar üzerinden
+         test yapmamızı sağlıyor. Selenium IDE:Browser eklentisi, bunu ekleyince yaptığımız
+          test islemlerini kaydediyor.  bunu görmeyeceğiz. SeleniumWebDriver SUAN kullandığımız,
+        */
 
 
 
